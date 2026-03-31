@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+// import Product from "./components/Product";
+import Product from "@components/Product";
+import "./main.css";
 
 function App() {
   return (
     <div>
       <h1>Hello, React1234!</h1>
+      <Product />
     </div>
   );
 }

@@ -18,7 +18,7 @@ export default defineConfig({
     alias: {
       "@": createAlias(""), //src/,项目根目录
       "@components": createAlias("components"), //src/components/,组件专用目录
-      "~img": createAlias("assets/img"), //src/assets/img/,图片专用目录
+      "~img": createAlias("assets/images"), //src/assets/images/,图片专用目录
       "#types": createAlias("/types"), //src/types/,类型专用目录
       "@utils": createAlias("utils"),
       "@assets": createAlias("assets"),
