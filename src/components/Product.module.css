@@ -1,4 +1,4 @@
-.product-text-container {
+.productTextContainer {
   position: absolute;
   top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -8,12 +8,12 @@
   font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
 }
 
-.product-title {
+.productTitle {
   font-size: 2rem;
   font-weight: 700;
 }
 
-.product-details {
+.productDetails {
   font-size: 1rem;
   font-weight: 400;
   margin-top: 1.25rem;
