@@ -16,6 +16,7 @@ const StyledProductContainer = styled.div`
 
 function Product(props) {
   const imgStyle = { width: "auto", height: "100%", borderRadius: "1.5rem" };
+  // props.image = "123";
   return (
     <StyledProductContainer hoverScale={1.05} transition="0.5s">
       <img style={imgStyle} src={props.image} alt={props.title} />
