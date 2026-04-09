@@ -5,14 +5,20 @@ import Product from "@components/Product";
 import { product } from "@assets/data/index";
 
 function App() {
+  const handleProductClick = (title) => {
+    alert("Product clicked!" + title);
+    console.log("Product clicked!");
+  };
+
   return (
     <div>
       <h1>Hello, React1234!</h1>
-      <Product
+      {/* <Product
         image={product.image}
         title={product.title}
         detail={product.detail}
-      />
+      /> */}
+      <Product {...product} onProductClick={handleProductClick} />
     </div>
   );
 }

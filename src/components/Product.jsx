@@ -14,15 +14,20 @@ const StyledProductContainer = styled.div`
   }
 `;
 
-function Product(props) {
+function Product({ image, title, detail, scale = 1.05, onProductClick }) {
   const imgStyle = { width: "auto", height: "100%", borderRadius: "1.5rem" };
   // props.image = "123";
+  // (image, title, (detail = props));
   return (
-    <StyledProductContainer hoverScale={1.05} transition="0.5s">
-      <img style={imgStyle} src={props.image} alt={props.title} />
+    <StyledProductContainer
+      hoverScale={scale}
+      transition="0.5s"
+      onClick={() => onProductClick(title)}
+    >
+      <img style={imgStyle} src={image} alt={title} />
       <div className={styles.productTextContainer}>
-        <div className={styles.productTitle}>{props.title}</div>
-        <div className={styles.productDetails}>{props.detail}</div>
+        <div className={styles.productTitle}>{title}</div>
+        <div className={styles.productDetails}>{detail}</div>
       </div>
     </StyledProductContainer>
   );
