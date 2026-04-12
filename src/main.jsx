@@ -1,24 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-// import Product from "./components/Product";
-import Product from "@components/Product";
-import { product } from "@assets/data/index";
+import { NEW_ARRIVALS_LIST } from "@assets/data/index";
+import ProductList from "@components/ProductList";
 
 function App() {
-  const handleProductClick = (title) => {
-    alert("Product clicked!" + title);
-    console.log("Product clicked!");
-  };
-
   return (
     <div>
-      <h1>Hello, React1234!</h1>
-      {/* <Product
-        image={product.image}
-        title={product.title}
-        detail={product.detail}
-      /> */}
-      <Product {...product} onProductClick={handleProductClick} />
+      <ProductList data={NEW_ARRIVALS_LIST} />
     </div>
   );
 }
