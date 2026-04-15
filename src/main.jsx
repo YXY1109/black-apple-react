@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { NEW_ARRIVALS_LIST } from "@assets/data/index";
+import { NEW_ARRIVALS_LIST, NEW_ARRIVALS_LIST_2 } from "@assets/data/index";
 import ProductList from "@components/ProductList";
 
 function App() {
